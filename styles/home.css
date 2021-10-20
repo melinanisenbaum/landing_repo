@@ -1,0 +1,184 @@
+/* CAROUSEL */
+.carousel-nav {
+    display: none;
+}
+.carousel-prev, .carousel-next {
+    display: none;
+}
+.slide-img {
+    height: auto;
+    width: 100vw;
+}
+i .fa-chevron-left, i .fa-chevron-right {
+    display: none;
+}
+@media all and (min-width: 768px) {
+    @keyframes tonext {
+        75% {
+          left: 0;
+        }
+        95% {
+          left: 100%;
+        }
+        98% {
+          left: 100%;
+        }
+        99% {
+          left: 0;
+        }
+    }
+      
+    @keyframes tostart {
+        75% {
+          left: 0;
+        }
+        95% {
+          left: -300%;
+        }
+        98% {
+          left: -300%;
+        }
+        99% {
+          left: 0;
+        }
+    }
+      
+    @keyframes snap {
+        96% {
+          scroll-snap-align: center;
+        }
+        97% {
+          scroll-snap-align: none;
+        }
+        99% {
+          scroll-snap-align: none;
+        }
+        100% {
+          scroll-snap-align: center;
+        }
+    }
+    * {
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0px;
+    }
+    *::-webkit-scrollbar {
+        width: 0;
+    }
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+    * {
+        -ms-overflow-style: none;
+    }
+    .carousel-nav {
+        display: block;
+    }
+    .carousel-prev, .carousel-next {
+        display: inline-block;
+    }
+    .carousel {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        counter-reset: item;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+    }
+    .fa-chevron-left, .fa-chevron-right {
+        display: block;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        color: rgb(170, 170, 170);
+        background-color: transparent;
+    }
+    .slide {
+        position: relative;
+        flex: 0 0 100%;
+        width: 100%;
+        counter-increment: item;
+    }
+    .slide-img {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .slide:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-40%,70px);
+        color: #fff;
+        font-size: 2em;
+    }
+    .snapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 760px;
+        scroll-snap-align: center;
+    }
+    @media (hover: hover) {
+        .snapper {
+            animation-name: tonext, snap;
+            animation-timing-function: ease;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        .slide:last-child .snapper {
+            animation-name: tostart, snap;
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .snapper {
+            animation-name: none;
+        }
+    }
+    .carousel-section {
+        position: relative;
+    }
+    .carousel-section:hover .snapper, .carousel-section:focus-within .snapper {
+        animation-name: none;
+    }
+
+    .carousel-nav-list, .carousel-navi-item {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-btn {
+        display: inline-block;
+        width: 1.1rem;
+        height: 1.1rem;
+        background-color: rgb(160, 158, 158);
+        background-clip: content-box;
+        border: 0.25rem solid transparent;
+        border-radius: 50%;
+        font-size: 0;
+        transition: transform 0.1s;
+    }
+    .carousel-section::before, .carousel-section::after, .carousel-prev, .carousel-next {
+        position: absolute;
+        transform: translateY(-50%);
+        background: transparent;
+    }
+    .carousel-prev {
+        left: 20px;
+    }
+    .carousel-next {
+        right: 20px;
+    }
+}
+@media all and (min-width: 1024px) {
+    .slide-img {
+        height: auto;
+        width: 100vw;
+        overflow: hidden;
+    }
+}

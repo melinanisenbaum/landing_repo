@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nothing+You+Could+Do&display=swap');
+/* CAMBIAR Calidad de imagen segun media queries */
+/* VER tipografia responsiva segun media queries */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    /* background: #FFFFFF; */
+}
+nav  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+}
+.top-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: rgb(132, 132, 132, 0.1) solid 0.5px;
+    z-index: 99;
+}
+.li-line {
+    width: 40px;
+    opacity: 0.5;
+    border: 0.5px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-icons {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+i {
+    cursor: pointer;
+    color:rgb(88, 88, 88);
+}
+i:hover {
+    color: gray;
+}
+i:active {
+    color:gray;
+}
+.logo {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 150%;
+    padding-left: 15px;
+}
+.menu-check {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+a:hover {
+    color: gray;
+}
+a:active {
+    color:gray;
+}
+.main-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    height: 100vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    background-color: white;
+    opacity: 90%;
+    z-index: 2;
+    line-height: 60px;
+}
+.top-nav input:checked ~ .main-menu {
+    display: block;
+}
+.top-nav input:checked ~ .menu-icons .fa-bars {
+    display: none;
+}
+.top-nav input:not(:checked) ~ .menu-icons .fa-times {
+    display:none;
+}
+.nav-item {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+/* img {
+    width: 100%;
+} */
+section {
+    margin-bottom: 30px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+}
+.social {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.fab, .fa-solid, .fa-brands {
+    padding: 5px;
+    color: grey;
+}
+.copywrite {
+    text-align: center;
+    font-size: 70%;
+}
+@media all and (min-width: 768px) {
+    header {
+        height: 90px;
+    }
+    /* main {
+        height: 78vh;
+    }     */
+    .top-nav  {
+        flex-direction: row;
+        position: fixed;
+        height: 70px;
+        background: #ffff;
+    }
+    .nav-item  {
+        padding-left: 30px;
+    }
+    .menu-check, .menu-icons {
+        display: none;
+    }
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        position: static;
+        height: auto;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0px;
+        background-color: auto;
+        opacity: 100%;
+        z-index: 0;
+        line-height: 0;
+    }
+    .li-line {
+        display: none;
+    }
+    .nav-item:last-child {
+        padding-right: 15px;
+    }
+    .nav-link {
+        line-height: 110%;
+    }
+    .active{
+        border-bottom: 1px solid grey;
+    }
+    section {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .social {
+        font-size: 24px;
+    }
+    .social i {
+        font-size: 1em;
+    }
+    .copywrite {
+        font-size: 80%;
+    }
+}
+@media all and (min-width: 1024px) {
+    .logo {
+        font-size: 1.7rem;
+        padding-left: 50px;
+    }
+    .top-nav {
+        height: 90px;
+    }
+    .nav-item {
+        font-size: 1.2rem;
+        padding-left: 70px;
+    }
+    .nav-item:last-child {
+        padding-right: 50px;
+    }
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    .copywrite {
+        font-size: 1rem;
+    }
+}
+@media all and (min-width: 1400px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+    .nav-item {
+        font-size: 1.6rem;
+    }
+    .about-me {
+        max-width: 60%;
+    }
+    .portrait {
+        width: 400px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+    .copywrite {
+        font-size: 110%;
+    }
+    .social {
+        padding-bottom: 20px;
+    }
+    .social i {
+        font-size: 1.4em;
+    }
+}

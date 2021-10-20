@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  type="text/css" href="./styles/main.css">
+        <link rel="stylesheet"  type="text/css" href="./styles/home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" type="image/png"><!-- no se ve-->   
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="https://kit.fontawesome.com/8d65859796.js" crossorigin="anonymous"></script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+        <title>Susana Pontaut</title>
+    </head>
+    <body>
+        <header>
+            <!-- Nav -->
+            <nav class="top-nav">
+                <a class="logo" href="index.html">Susana Pontaut</a>
+                <input type="checkbox" class="menu-check" id="checkbox">
+                <label for="checkbox" class="menu-icons">
+                    <i class="fa fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </label>     
+                <ul id="main-menu" class="main-menu animate__animated animate__slideInDown animate__slow">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <div class="li-line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-me.html">Acerca de</a>
+                        <div class="li-line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <div class="li-line"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                        <div class="li-line"></div>
+                    </li>
+                </ul>   
+ 
+            </nav>
+        </header>
+        <main>
+            <!-- carrousel -->
+            <section class="carousel-section">
+                <ol class="carousel" aria-label="gallery">
+                    <li id="slide1" tabindex="0" class="slide">
+                        <div class="snapper">
+                            <img class="slide-img" src="/images/abstracts/IMG_20210827_130402171.jpg" alt="">
+                            <a href="#slide3" class="carousel-prev">
+                                <i class="fas fa-chevron-left fa-2x"></i>                            </a>
+                            <a href="#slide2" class="carousel-next">
+                                <i class="fas fa-chevron-right fa-2x"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="slide2" tabindex="0" class="slide">
+                        <div class="snapper">
+                            <img class="slide-img" src="/images/abstracts/IMG_20210827_130422814.jpg" alt="">
+                            <a href="#slide1" class="carousel-prev">
+                                <i class="fas fa-chevron-left fa-2x"></i>                            
+                            </a>
+                            <a href="#slide3" class="carousel-next">
+                                <i class="fas fa-chevron-right fa-2x"></i>                            
+                            </a>
+                        </div>
+                    </li>
+                    <li id="slide3" tabindex="0" class="slide">
+                        <div class="snapper">
+                            <img class="slide-img" src="/images/abstracts/IMG_20210827_125820769.jpg" alt="">
+                            <a href="#slide2" class="carousel-prev">
+                                <i class="fas fa-chevron-left fa-2x"></i>                            
+                            </a>
+                            <a href="#slide1" class="carousel-next">
+                                <i class="fas fa-chevron-right fa-2x"></i>                            
+                            </a>
+                        </div>
+                    </li>
+                </ol>
+                <aside class="carousel-nav">
+                    <ol class="carousel-nav-list">
+                        <li class="carousel-nav-item">
+                            <a href="#slide1" class="carousel-btn"></a>
+                        </li>
+                        <li class="carousel-nav-item">
+                            <a href="#slide2" class="carousel-btn"></a>
+                        </li>
+                        <li class="carousel-nav-item">
+                            <a href="#slide3" class="carousel-btn"></a>
+                        </li>
+                    </ol>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <!-- social media -->
+            <div class="social">
+                <a target="black" href="https://www.instagram.com/" title="instagram">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a target="black" href="https://www.facebook.com/" title="facebook">
+                    <i class="fab fa-facebook-square fa-lg"></i>
+                </a>
+            </div>
+            <!-- Copywrite Text -->
+            <div class="copywrite">
+                <span>Copyright ©
+                    <script>document.write(new Date().getFullYear());</script>
+                    All rights reserved.<br>Created by 
+                    <a href="https://github.com/melinanisenbaum" target="_blank">Melina Nisenbaum</a>
+                </span>
+            </div>
+        </footer>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>

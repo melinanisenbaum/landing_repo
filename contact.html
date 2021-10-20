@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="./styles/main.css">
+    <link rel="stylesheet"  type="text/css" href="./styles/contact.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" type="image/png"><!-- no se ve-->   
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Fontaweasome -->
+    <script src="https://kit.fontawesome.com/8d65859796.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <title>Susana Pontaut</title>
+<body>
+    <header>
+        <!-- Nav -->
+        <nav class="top-nav">
+            <a class="logo" href="index.html">Susana Pontaut</a>
+            <input type="checkbox" class="menu-check" id="checkbox">
+            <label for="checkbox" class="menu-icons">
+                <i class="fa fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>     
+            <ul class="main-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <div class="li-line"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-me.html">Acerca de</a>
+                    <div class="li-line"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <div class="li-line"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contacto</a>
+                    <div class="li-line"></div>
+                </li>
+            </ul>   
+
+        </nav>
+    </header>
+    <main>
+        <div class="contact-img">
+            <img class="header-img" src="images/abstracts/IMG_20210827_125745605.jpg">
+        </div>
+        <div class="container">
+            <section class="contact">
+                <h2>Contacto</h2>
+                <div class="social">
+                    <a href="https://---------" title="whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>                </a>
+                    <a href="https://---------" title="messenger" target="_blank">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <div class="input-group">
+                            <input type="text" class="data" id="name" aria-describedby="your name">
+                            <div id="error-name" class="error">
+                                <i class="fa fa-exclamation"></i>
+                            </div>    
+                        </div>
+                    </div>  
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <div class="input-group">
+                          <input type="email" class="data" id="email" aria-describedby="email">
+                         <div id="error-email" class="error">
+                            <i class="fa fa-exclamation"></i>
+                         </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="message">Message:</label>
+                            <div id="error-msg" class="error">
+                                <i class="fa fa-exclamation"></i>
+                            </div>
+                        </div>
+                        <textarea class="data" id="message" rows="3"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
+            <div class="text-box">
+                <span>Todas las obras están<br>a la venta y<br>se toman pedidos<br>por encargo.</span>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <!-- social media  -->
+        <div class="social">
+            <a target="_blank" href="https://www.instagram.com/" title="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/" title="facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <!-- Copywrite Text -->
+        <div class="copywrite">
+            <span>Copyright ©
+                <script>document.write(new Date().getFullYear());</script>
+                All rights reserved.<br>Created by 
+                <a href="https://github.com/melinanisenbaum" target="_blank">Melina Nisenbaum</a>
+            </span>
+        </div>
+    </footer>
+    <script src="./scripts/contact.js"></script>
+</body>
+</html>

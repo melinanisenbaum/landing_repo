@@ -1,0 +1,166 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-sections {
+    margin-top: 20px;
+}
+.gallery {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.gallery-img {
+    margin: 10px;
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+}
+.back {
+    display: none;
+}
+.fa-arrow-left {
+    padding-left: 20px;
+    margin-right: 10px;;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.card:hover {
+    opacity: 0.9;
+}
+.img-container img {
+    width: 100%;
+    height: auto;
+    max-width: 428px;
+}
+.img-container img:hover {
+    opacity: 0.5;
+}
+.buttons {
+    display: none;
+}
+.caption {
+    display: none;
+}
+/* .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 1;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100vw;
+}
+.modal .icon-close {
+    margin: 5px;
+    display: block;
+    position: absolute;
+    top: 64px;
+    right: 9.14%;
+}
+.modal .carousel-container {
+    width: 318px;
+}
+.modal .gif-figure {
+    height: 350px;
+}
+.modal .gif {
+    width: 318px;
+    height: 245px;
+    border: none;
+    margin-right: 0px;
+}
+
+.modal .username, .modal .title {
+    display:block;
+    color: #000000;
+    position: relative;
+    left: 0px;
+}
+.modal .title {
+    margin-top: 6px;
+} */
+@media all and (min-width: 428px) {
+    .card {
+        margin: 10px;
+    }
+}
+@media all and (min-width: 768px) {
+    .back {
+        display: block;
+        margin-left: 50px;
+        font-size: 1.3rem;
+    }
+    .portfolio {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery-link {
+        font-size: 1.2rem;
+    }
+}
+@media all and (min-width: 1024px) {
+    .portfolio {
+        flex-direction: row;
+    }
+    .gallery {
+        width: 50vw;
+        height: 700px;
+        margin-bottom: 0;
+    }
+    .gallery-link {
+        font-size: 1.6rem;
+    }
+    .gallery-img {
+        width: 100%;
+        height: 650px;
+        margin: 0;
+        max-width: 50vw;
+    }
+    .modal {
+        height: 968px;
+        padding-top: 110px;
+    }
+    .modal .carousel-box {
+        width: 695px;
+    }
+    .modal .icon-close {
+        margin: 0px;
+        top: 66.4px;
+        right: 19%;
+    }
+    .modal .carousel-container {
+        width: 100%;
+    }
+    .modal .carousel-button {
+        background-color: #FFFFFF;
+        padding-top: 172.5px;
+    }
+    .modal .carousel {
+        width: 695px;
+        position: relative;
+    }
+    .modal .gif-figure {
+        height: 455px;
+    }
+    .modal .gif {
+        width: 695px;
+        height: 385px;
+    }
+    .modal .gif-buttons {
+        top: 407px;
+        right: 0px;
+    }
+    .modal .figcaption {
+        top: 412px;
+        width: 450px;
+    }
+}
+/* FALTA ESTILAR EL MODAL */
