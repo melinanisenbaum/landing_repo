@@ -58,6 +58,9 @@ input {
     border-bottom: 0.3px solid grey;
     outline: none;
 }
+.error-msg span {
+    color: red;
+}
 button {
     width: fit-content;
     border: 0.3px solid grey;

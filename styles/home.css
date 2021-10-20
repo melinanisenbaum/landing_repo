@@ -182,3 +182,10 @@ i .fa-chevron-left, i .fa-chevron-right {
         overflow: hidden;
     }
 }
+@media all and (min-width: 1024px) {
+    .slide-img {
+        height: auto;
+        width: 100vw;
+        overflow: hidden;
+    }
+}

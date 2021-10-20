@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nothing+You+Could+Do&display=swap');
-/* CAMBIAR Calidad de imagen segun media queries */
-/* VER tipografia responsiva segun media queries */
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +7,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color:black;
-    /* background: #FFFFFF; */
 }
 nav  {
     display: flex;
@@ -96,9 +93,6 @@ a:active {
     font-size: 1.1rem;
     font-weight: 400;
 }
-/* img {
-    width: 100%;
-} */
 section {
     margin-bottom: 30px;
     width: 100vw;
@@ -136,9 +130,6 @@ footer {
     header {
         height: 90px;
     }
-    /* main {
-        height: 78vh;
-    }     */
     .top-nav  {
         flex-direction: row;
         position: fixed;
